@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Provence Animaux - Votre animalerie en ligne spécialisée en Provence-Alpes-Côte d'Azur. Plus de 30 ans d'expérience."
+    />
+    <title>Provence Animaux - Votre animalerie ensoleillée</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Product+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <i class="fas fa-paw"></i> Provence <span>Animaux</span>
+        </div>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#chiens">Univers Chien</a></li>
+            <li><a href="#chats">Univers Chat</a></li>
+            <li><a href="#aquario">Aquariophilie</a></li>
+            <li><a href="#nac">Rongeurs & NAC</a></li>
+            <li><a href="#soins">Hygiène & Soins</a></li>
+          </ul>
+        </nav>
+        <div class="user-icon">
+          <i class="fas fa-user-circle"></i>
+          <div class="auth-dropdown">
+            <a href="#" class="auth-btn login-btn">Se connecter</a>
+            <a href="#" class="auth-btn signup-btn">S'inscrire</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero / Jumbotron -->
+    <section id="accueil" class="hero">
+      <div class="hero-content">
+        <h1>LE BONHEUR AU QUOTIDIEN</h1>
+        <h2>Alimentation, Jeux & Accessoires</h2>
+        <p>
+          Expertise et passion pour tous vos compagnons : chiens, chats,
+          poissons et NAC.
+        </p>
+        <p class="small-note">Livraison offerte dès 49€ d'achat en PACA</p>
+
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Rechercher un produit, une marque..."
+            aria-label="Rechercher un produit"
+          />
+          <button type="submit" aria-label="Lancer la recherche">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Catalogue Section -->
+    <section class="catalog-section">
+      <div class="catalog-box">
+        <h3><i class="fas fa-star"></i> Offre de Bienvenue</h3>
+        <p>
+          Profitez de -10% sur votre première commande avec le code
+          <strong>PROVENCE10</strong>
+        </p>
+        <a href="#" class="btn"> J'en profite ! </a>
+      </div>
+    </section>
+
+    <!-- Discovery Section -->
+    <section class="discovery">
+      <h2 class="section-title">Nos Univers</h2>
+      <div class="grid-cards">
+        <div class="card-box card-dog">
+          <div class="card-content">
+            <h3>Alimentation Naturelle</h3>
+            <p>Sans céréales & Bio</p>
+            <button class="btn">Voir la gamme</button>
+          </div>
+        </div>
+        <div class="card-box card-cat">
+          <div class="card-content">
+            <h3>Confort & Dodo</h3>
+            <p>Paniers, arbres et niches</p>
+            <button class="btn">Cocooning</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Best Sellers Section -->
+    <section id="chiens" class="products-section">
+      <h2 class="section-title">Les Coups de Cœur du Moment</h2>
+
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev-btn" aria-label="Précédent">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="carousel-container" id="carousel-1">
+          <article class="product-card">
+            <div class="prod-img"><i class="fas fa-bone fa-3x"></i></div>
+            <h3 class="prod-title">Croc'Natural Dog</h3>
+            <p class="prod-desc">Poulet & Riz - 12kg</p>
+            <span class="prod-price">54.90 €</span>
+            <button class="btn btn-small">Ajouter</button>
+          </article>
+
+          <article class="product-card">
+            <div class="prod-img"><i class="fas fa-couch fa-3x"></i></div>
+            <h3 class="prod-title">Panier Orthopédique</h3>
+            <p class="prod-desc">Mémoire de forme XL</p>
+            <span class="prod-price">79.00 €</span>
+            <button class="btn btn-small">Ajouter</button>
+          </article>
+
+          <article class="product-card">
+            <div class="prod-img"><i class="fas fa-fish fa-3x"></i></div>
+            <h3 class="prod-title">Aquarium NanoLed</h3>
+            <p class="prod-desc">Kit complet 30L</p>
+            <span class="prod-price">89.90 €</span>
+            <button class="btn btn-small">Ajouter</button>
+          </article>
+
+          <article class="product-card">
+            <div class="prod-img"><i class="fas fa-cat fa-3x"></i></div>
+            <h3 class="prod-title">Tour Griffoir Design</h3>
+            <p class="prod-desc">Bois & Sisal - 1m20</p>
+            <span class="prod-price">119.00 €</span>
+            <button class="btn btn-small">Ajouter</button>
+          </article>
+
+          <article class="product-card">
+            <div class="prod-img"><i class="fas fa-carrot fa-3x"></i></div>
+            <h3 class="prod-title">Enclos Lapin Modulable</h3>
+            <p class="prod-desc">Métal noir - Intérieur</p>
+            <span class="prod-price">45.90 €</span>
+            <button class="btn btn-small">Ajouter</button>
+          </article>
+
+          <article class="product-card">
+            <div class="prod-img"><i class="fas fa-first-aid fa-3x"></i></div>
+            <h3 class="prod-title">Pipettes Anti-Parasites</h3>
+            <p class="prod-desc">Pack 6 mois - Chat < 4kg</p>
+            <span class="prod-price">29.90 €</span>
+            <button class="btn btn-small">Ajouter</button>
+          </article>
+
+          <article class="product-card">
+            <div class="prod-img"><i class="fas fa-water fa-3x"></i></div>
+            <h3 class="prod-title">Pompe Filtration Externe</h3>
+            <p class="prod-desc">Silencieuse - 600L/h</p>
+            <span class="prod-price">65.50 €</span>
+            <button class="btn btn-small">Ajouter</button>
+          </article>
+
+          <article class="product-card">
+            <div class="prod-img"><i class="fas fa-cookie fa-3x"></i></div>
+            <h3 class="prod-title">Box Découverte Bio</h3>
+            <p class="prod-desc">Assortiment friandises Chien</p>
+            <span class="prod-price">19.90 €</span>
+            <button class="btn btn-small">Ajouter</button>
+          </article>
+        </div>
+
+        <button class="carousel-btn next-btn" aria-label="Suivant">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Category Products Section -->
+    <section id="aquario" class="products-section products-section--gray">
+      <h2 class="section-title">Trouvez votre bonheur</h2>
+
+      <!-- Filters -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="tous">Tous</button>
+        <button class="filter-btn" data-filter="chiens">Chiens</button>
+        <button class="filter-btn" data-filter="chats">Chats</button>
+        <button class="filter-btn" data-filter="aquario">Aquario</button>
+        <button class="filter-btn" data-filter="nac">NAC</button>
+        <button class="filter-btn" data-filter="soins">Soins</button>
+      </div>
+
+      <div class="carousel-wrapper">
+        <button class="carousel-btn prev-btn" aria-label="Précédent">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="carousel-container" id="carousel-2">
+          <article class="product-card" data-category="aquario">
+            <div class="prod-img"><i class="fas fa-leaf fa-3x"></i></div>
+            <h3 class="prod-title">Plante Aquatique Artificielle</h3>
+            <p class="prod-desc">Réalisme bluffant - 20cm</p>
+            <span class="prod-price">14.50 €</span>
+          </article>
+
+          <article class="product-card" data-category="nac">
+            <div class="prod-img"><i class="fas fa-running fa-3x"></i></div>
+            <h3 class="prod-title">Roue Silencieuse</h3>
+            <p class="prod-desc">Pour Hamster Doré - 28cm</p>
+            <span class="prod-price">22.00 €</span>
+          </article>
+
+          <article class="product-card" data-category="chiens">
+            <div class="prod-img">
+              <i class="fas fa-football-ball fa-3x"></i>
+            </div>
+            <h3 class="prod-title">Lanceur de Balles</h3>
+            <p class="prod-desc">Automatique - Portée 10m</p>
+            <span class="prod-price">49.90 €</span>
+          </article>
+
+          <article class="product-card" data-category="chats">
+            <div class="prod-img"><i class="fas fa-lightbulb fa-3x"></i></div>
+            <h3 class="prod-title">Laser Interactif</h3>
+            <p class="prod-desc">Jeu autonome programmable</p>
+            <span class="prod-price">29.90 €</span>
+          </article>
+
+          <article class="product-card" data-category="aquario">
+            <div class="prod-img"><i class="fas fa-fish fa-3x"></i></div>
+            <h3 class="prod-title">Flocons Tropical Mix</h3>
+            <p class="prod-desc">Aliment complet - 250ml</p>
+            <span class="prod-price">12.90 €</span>
+          </article>
+
+          <article class="product-card" data-category="soins">
+            <div class="prod-img"><i class="fas fa-pump-soap fa-3x"></i></div>
+            <h3 class="prod-title">Shampoing Hypoallergénique</h3>
+            <p class="prod-desc">Peaux sensibles - 500ml</p>
+            <span class="prod-price">18.50 €</span>
+          </article>
+
+          <article class="product-card" data-category="nac">
+            <div class="prod-img"><i class="fas fa-carrot fa-3x"></i></div>
+            <h3 class="prod-title">Foin de Montagne</h3>
+            <p class="prod-desc">Enrichi en Pissenlit - 1kg</p>
+            <span class="prod-price">9.90 €</span>
+          </article>
+
+          <article class="product-card" data-category="soins">
+            <div class="prod-img"><i class="fas fa-cut fa-3x"></i></div>
+            <h3 class="prod-title">Kit Toilettage Pro</h3>
+            <p class="prod-desc">Brosse + Coupe-griffes</p>
+            <span class="prod-price">34.90 €</span>
+          </article>
+
+          <article class="product-card" data-category="chiens">
+            <div class="prod-img"><i class="fas fa-hiking fa-3x"></i></div>
+            <h3 class="prod-title">Gourde de Voyage</h3>
+            <p class="prod-desc">Anti-fuite - 500ml</p>
+            <span class="prod-price">15.90 €</span>
+          </article>
+
+          <article class="product-card" data-category="chats">
+            <div class="prod-img"><i class="fas fa-cat fa-3x"></i></div>
+            <h3 class="prod-title">Fontaine Céramique</h3>
+            <p class="prod-desc">Hygiénique et esthétique</p>
+            <span class="prod-price">55.00 €</span>
+          </article>
+        </div>
+
+        <button class="carousel-btn next-btn" aria-label="Suivant">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Reviews Section (Google Style) -->
+    <section class="reviews-section">
+      <h2 class="section-title">Ce que disent nos clients</h2>
+
+      <div class="reviews-header-box">
+        <div class="google-badge">
+          <div class="google-logo">
+            <span>G</span><span>o</span><span>o</span><span>g</span
+            ><span>l</span><span>e</span>
+          </div>
+          <span>Reviews</span>
+        </div>
+        <div class="rating-score">4.9</div>
+        <div class="rating-stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="rating-count">Basé sur 248 avis</div>
+      </div>
+
+      <div class="carousel-wrapper">
+        <!-- Boutons de navigation pour les avis -->
+        <button class="carousel-btn prev-btn" aria-label="Avis précédents">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+
+        <div class="carousel-container" id="reviews-carousel">
+          <!-- Avis 1 -->
+          <div class="review-card-google">
+            <div class="reviewer-header">
+              <div class="reviewer-avatar avatar-blue">M</div>
+              <div class="reviewer-info">
+                <h4>Marie S.</h4>
+                <span class="review-date">Il y a 2 jours</span>
+              </div>
+              <i
+                class="fab fa-google google-icon-small"
+                style="color: #aaa"
+              ></i>
+            </div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              Super boutique ! Livraison rapide en Provence (2 jours) et
+              conseils au top pour mon Golden Retriever. Le personnel est
+              adorable au téléphone. Je recommande vivement Provence Animaux
+              pour leur sérieux.
+            </p>
+          </div>
+
+          <!-- Avis 2 -->
+          <div class="review-card-google">
+            <div class="reviewer-header">
+              <div class="reviewer-avatar avatar-green">P</div>
+              <div class="reviewer-info">
+                <h4>Pierre D.</h4>
+                <span class="review-date">Il y a 1 semaine</span>
+              </div>
+              <i
+                class="fab fa-google google-icon-small"
+                style="color: #aaa"
+              ></i>
+            </div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              Enfin des croquettes de qualité à prix abordable. Mon chat qui est
+              très difficile les adore. Le service client m'a bien orienté pour
+              le choix de la gamme sans céréales. Merci !
+            </p>
+          </div>
+
+          <!-- Avis 3 -->
+          <div class="review-card-google">
+            <div class="reviewer-header">
+              <div class="reviewer-avatar avatar-orange">S</div>
+              <div class="reviewer-info">
+                <h4>Sophie Martin</h4>
+                <span class="review-date">Il y a 3 semaines</span>
+              </div>
+              <i
+                class="fab fa-google google-icon-small"
+                style="color: #aaa"
+              ></i>
+            </div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="review-text">
+              Très bon site, clair et facile à utiliser. J'ai commandé un arbre
+              à chat, reçu en parfait état. Seul bémol : le carton était un peu
+              abîmé mais le produit intact. Je recommanderai.
+            </p>
+          </div>
+
+          <!-- Avis 4 -->
+          <div class="review-card-google">
+            <div class="reviewer-header">
+              <div class="reviewer-avatar avatar-purple">L</div>
+              <div class="reviewer-info">
+                <h4>Lucas B.</h4>
+                <span class="review-date">Il y a 1 mois</span>
+              </div>
+              <i
+                class="fab fa-google google-icon-small"
+                style="color: #aaa"
+              ></i>
+            </div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              Cliente fidèle depuis 5 ans à la boutique d'Aix-en-Provence, je
+              suis ravie de pouvoir commander en ligne maintenant. La livraison
+              gratuite est un vrai plus pour les gros sacs de 15kg !
+            </p>
+          </div>
+
+          <!-- Avis 5 -->
+          <div class="review-card-google">
+            <div class="reviewer-header">
+              <div class="reviewer-avatar avatar-blue">J</div>
+              <div class="reviewer-info">
+                <h4>Jean-Yves C.</h4>
+                <span class="review-date">Il y a 2 mois</span>
+              </div>
+              <i
+                class="fab fa-google google-icon-small"
+                style="color: #aaa"
+              ></i>
+            </div>
+            <div class="review-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i><i class="fas fa-star"></i
+              ><i class="fas fa-star"></i>
+            </div>
+            <p class="review-text">
+              Large choix pour les oiseaux, ce qui est rare. Les graines sont
+              fraiches et propres. Envoi soigné. Rien à redire, c'est pro.
+            </p>
+          </div>
+        </div>
+
+        <button class="carousel-btn next-btn" aria-label="Avis suivants">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="split-section">
+      <div class="split-img">
+        <img
+          src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80"
+          alt="Intérieur de notre boutique Provence Animaux"
+          loading="lazy"
+        />
+      </div>
+      <div class="split-text">
+        <h3>L'Esprit Provence Animaux</h3>
+        <p>
+          Installés au cœur de la Provence, nous cultivons une passion simple :
+          offrir une vie saine et heureuse à vos animaux. Notre sélection
+          privilégie la qualité, la durabilité et le respect des besoins
+          naturels de chaque espèce.
+        </p>
+        <p>
+          <strong>Une équipe d'experts :</strong> Vétérinaires,
+          comportementalistes et passionnés sont là pour vous guider. Que vous
+          ayez un Grand Danois ou un poisson combattant, nous avons le conseil
+          qu'il vous faut pour son épanouissement sous le soleil du Sud.
+        </p>
+        <button class="btn">Notre Histoire</button>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="soins" class="split-section split-section--reverse">
+      <div class="split-img">
+        <img
+          src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&w=800&q=80"
+          alt="Soins pour animaux"
+          loading="lazy"
+        />
+      </div>
+      <div class="split-text">
+        <h3>Nos Services Sur-Mesure</h3>
+        <p>
+          <strong>Toilettage & Spa :</strong> Offrez à votre compagnon un moment
+          de détente dans notre salon d'Aix. Shampoing bio, coupe aux ciseaux et
+          soins des griffes par nos experts toiletteurs.
+        </p>
+        <p>
+          <strong>Entretien Aquariums :</strong> Vous débutez ? Nos spécialistes
+          se déplacent pour l'installation et l'entretien de vos bacs. Analyse
+          de l'eau offerte en magasin tous les samedis matin !
+        </p>
+        <button class="btn">Réserver un soin</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Provence Animaux</h4>
+          <p style="color: #ccc; font-size: 0.9rem; line-height: 1.6">
+            Votre animalerie de confiance au cœur de la Provence. Passionnés par
+            le bien-être animal depuis 25 ans.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Informations</h4>
+          <ul>
+            <li><a href="#">Nos Magasins</a></li>
+            <li><a href="#">Recrutement</a></li>
+            <li><a href="#">Programme Fidélité</a></li>
+            <li><a href="#">Mentions légales & CGV</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-info">
+          <h4>Nous rencontrer</h4>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 123 Avenue de la Lavande<br />13100
+            AIX-EN-PROVENCE
+          </p>
+          <p>
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:0442990000">04 42 99 00 00</a>
+          </p>
+          <p>
+            <i class="far fa-clock"></i> Ouvert 7j/7<br />
+            9h00 - 19h30
+          </p>
+        </div>
+      </div>
+
+      <div class="copyright">
+        &copy; 2025 Provence Animaux. Fait avec
+        <i class="fas fa-heart" style="color: var(--primary-color)"></i> en
+        Provence.
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
